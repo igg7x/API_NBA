@@ -110,7 +110,7 @@ export const getMostPointsMostAssistsMostReboundsMostBlocksBySeason = async (
   const [results] = await pool.query(query, [season, season, season, season]);
   if (results.length === 0) {
     res.status(404).json({
-      message: `No hay estadisticas para el año ${season} del jugador ${name}`,
+      message: `No hay estadisticas para el año ${season}  `,
     });
   }
 
